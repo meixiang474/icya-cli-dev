@@ -22,5 +22,8 @@
   "dependencies": {
     "@icya-cli-dev/utils": "^1.0.1"
   },
-  "gitHead": "b264e5f14ee6464db1f4df843d725e78708390e7"
+  "gitHead": "b264e5f14ee6464db1f4df843d725e78708390e7",
+  "publishConfig": {
+    "access": "public"
+  }
 }
