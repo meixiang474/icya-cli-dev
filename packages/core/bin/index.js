@@ -1,3 +1,3 @@
 #! /usr/bin/env node
 
-consoe.log('hello icya-cli');
+consoe.log('hello icya-cli-dev');
