@@ -1,0 +1,33 @@
+{
+  "name": "@icya-cli-dev/exec",
+  "version": "1.0.4",
+  "description": "icya-cli-dev execute package",
+  "author": "iceya <1436098850@qq.com>",
+  "homepage": "https://github.com/meixiang474/icya-cli-dev#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meixiang474/icya-cli-dev.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/meixiang474/icya-cli-dev/issues"
+  },
+  "dependencies": {
+    "@icya-cli-dev/package": "file:../../models/package",
+    "@icya-cli-dev/log": "file:../../utils/log"
+  }
+}
