@@ -1,6 +1,6 @@
 {
   "name": "@icya-cli-dev/command",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "icya-cli-dev command",
   "author": "iceya <1436098850@qq.com>",
   "homepage": "https://github.com/meixiang474/icya-cli-dev#readme",
@@ -27,7 +27,7 @@
     "url": "https://github.com/meixiang474/icya-cli-dev/issues"
   },
   "dependencies": {
-    "@icya-cli-dev/log": "^1.0.7",
+    "@icya-cli-dev/log": "^1.0.8",
     "colors": "^1.4.0",
     "semver": "^7.3.4"
   },

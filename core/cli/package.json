@@ -1,6 +1,6 @@
 {
   "name": "@icya-cli-dev/core",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "icya-cli-dev core",
   "author": "iceya <1436098850@qq.com>",
   "homepage": "",
@@ -20,10 +20,10 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@icya-cli-dev/exec": "^1.0.7",
-    "@icya-cli-dev/get-npm-info": "^1.0.7",
-    "@icya-cli-dev/init": "^1.0.7",
-    "@icya-cli-dev/log": "^1.0.7",
+    "@icya-cli-dev/exec": "^1.0.8",
+    "@icya-cli-dev/get-npm-info": "^1.0.8",
+    "@icya-cli-dev/init": "^1.0.8",
+    "@icya-cli-dev/log": "^1.0.8",
     "colors": "^1.4.0",
     "commander": "^6.2.1",
     "dotenv": "^8.2.0",
