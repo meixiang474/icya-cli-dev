@@ -6,6 +6,9 @@
   "homepage": "https://github.com/meixiang474/icya-cli-dev#readme",
   "license": "ISC",
   "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -27,5 +30,6 @@
     "axios": "^0.21.1",
     "semver": "^7.3.4",
     "url-join": "^4.0.1"
-  }
+  },
+  "gitHead": "34ae587d68feafef815b62bbcd21fa9a586a9f17"
 }

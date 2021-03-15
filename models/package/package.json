@@ -27,12 +27,13 @@
     "url": "https://github.com/meixiang474/icya-cli-dev/issues"
   },
   "dependencies": {
-    "@icya-cli-dev/format-path": "file:../../utils/format-path",
-    "@icya-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
-    "@icya-cli-dev/utils": "file:../../utils/utils",
+    "@icya-cli-dev/format-path": "^1.0.7",
+    "@icya-cli-dev/get-npm-info": "^1.0.7",
+    "@icya-cli-dev/utils": "^1.0.7",
     "fs-extra": "^9.1.0",
     "npminstall": "^4.10.0",
     "path-exists": "^4.0.0",
     "pkg-dir": "^5.0.0"
-  }
+  },
+  "gitHead": "34ae587d68feafef815b62bbcd21fa9a586a9f17"
 }
