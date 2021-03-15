@@ -12,6 +12,8 @@ const {
   getNpmLatestVersion,
 } = require('@icya-cli-dev/get-npm-info');
 
+console.log('package');
+
 class Package {
   constructor(options) {
     if (!options) {

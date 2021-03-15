@@ -1,7 +1,7 @@
 'use strict';
 
 const log = require('npmlog');
-
+console.log('log');
 // 判断dug模式
 log.level = process.env.LOG_LEVEL ? process.env.LOG_LEVEL : 'info';
 // 修改前缀

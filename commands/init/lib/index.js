@@ -1,5 +1,5 @@
 'use strict';
-
+console.log('init');
 const inquirer = require('inquirer');
 const fse = require('fs-extra');
 const semver = require('semver');

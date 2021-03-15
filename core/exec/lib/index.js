@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = exec;
-
+console.log('exec');
 const cp = require('child_process');
 const path = require('path');
 const Package = require('@icya-cli-dev/package');

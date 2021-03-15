@@ -3,7 +3,7 @@
 module.exports = formatPath;
 
 const path = require('path');
-
+console.log('path');
 function formatPath(p) {
   if (p && typeof p === 'string') {
     const sep = path.sep;
