@@ -2,6 +2,8 @@
 
 module.exports = core;
 
+console.log('hello');
+
 const path = require('path');
 const semver = require('semver');
 const colors = require('colors/safe');
