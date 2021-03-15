@@ -1,6 +1,6 @@
 {
   "name": "@icya-cli-dev/exec",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "icya-cli-dev execute package",
   "author": "iceya <1436098850@qq.com>",
   "homepage": "https://github.com/meixiang474/icya-cli-dev#readme",
@@ -27,7 +27,7 @@
     "url": "https://github.com/meixiang474/icya-cli-dev/issues"
   },
   "dependencies": {
-    "@icya-cli-dev/package": "file:../../models/package",
-    "@icya-cli-dev/log": "file:../../utils/log"
+    "@icya-cli-dev/log": "file:../../utils/log",
+    "@icya-cli-dev/package": "file:../../models/package"
   }
 }
