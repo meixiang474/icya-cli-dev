@@ -27,7 +27,7 @@
     "url": "https://github.com/meixiang474/icya-cli-dev/issues"
   },
   "dependencies": {
-    "@icya-cli-dev/log": "^1.0.8",
+    "@icya-cli-dev/log": "file:../../utils/log",
     "colors": "^1.4.0",
     "semver": "^7.3.4"
   },

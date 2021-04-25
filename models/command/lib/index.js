@@ -1,22 +1,21 @@
-'use strict';
+"use strict";
 
-const semver = require('semver');
-const colors = require('colors');
-const log = require('@icya-cli-dev/log');
+const semver = require("semver");
+const colors = require("colors");
+const log = require("@icya-cli-dev/log");
 
-const LOWEST_NODE_VERSION = '12.0.0';
-console.log('command');
+const LOWEST_NODE_VERSION = "12.0.0";
 class Command {
   constructor(argv) {
-    log.verbose('Command constructor', argv);
+    log.verbose("Command constructor", argv);
     if (!argv) {
-      throw new Error('参数不能为空！');
+      throw new Error("参数不能为空！");
     }
     if (!Array.isArray(argv)) {
-      throw new Error('参数必须为数组！');
+      throw new Error("参数必须为数组！");
     }
     if (argv.length < 1) {
-      throw new Error('参数列表为空！');
+      throw new Error("参数列表为空！");
     }
     this._argv = argv;
     let runner = new Promise((resolve, reject) => {
@@ -27,7 +26,7 @@ class Command {
       chain = chain.then(() => this.exec());
       chain.catch((err) => {
         log.error(err.message);
-        if (process.env.LOG_LEVEL === 'verbose') {
+        if (process.env.LOG_LEVEL === "verbose") {
           console.log(err);
         }
       });
@@ -52,10 +51,10 @@ class Command {
   }
 
   init() {
-    throw new Error('init必须实现');
+    throw new Error("init必须实现");
   }
   exec() {
-    throw new Error('exec必须实现');
+    throw new Error("exec必须实现");
   }
 }
 

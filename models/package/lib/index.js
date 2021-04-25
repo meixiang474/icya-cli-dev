@@ -1,26 +1,24 @@
-'use strict';
+"use strict";
 
-const path = require('path');
-const fse = require('fs-extra');
-const pkgDir = require('pkg-dir').sync;
-const pathExists = require('path-exists').sync;
-const npminstall = require('npminstall');
-const { isObject } = require('@icya-cli-dev/utils');
-const formatPath = require('@icya-cli-dev/format-path');
+const path = require("path");
+const fse = require("fs-extra");
+const pkgDir = require("pkg-dir").sync;
+const pathExists = require("path-exists").sync;
+const npminstall = require("npminstall");
+const { isObject } = require("@icya-cli-dev/utils");
+const formatPath = require("@icya-cli-dev/format-path");
 const {
   getDefaultRegistry,
   getNpmLatestVersion,
-} = require('@icya-cli-dev/get-npm-info');
-
-console.log('package');
+} = require("@icya-cli-dev/get-npm-info");
 
 class Package {
   constructor(options) {
     if (!options) {
-      throw new Error('Package类的参数不能为空！');
+      throw new Error("Package类的参数不能为空！");
     }
     if (!isObject(options)) {
-      throw new Error('Package类的options参数必须为对象！');
+      throw new Error("Package类的options参数必须为对象！");
     }
     // package路径
     this.targetPath = options.targetPath;
@@ -31,14 +29,14 @@ class Package {
     // package的version
     this.packageVersion = options.packageVersion;
     // 缓存目录前缀
-    this.cacheFilePathPrefix = this.packageName.replace('/', '_');
+    this.cacheFilePathPrefix = this.packageName.replace("/", "_");
   }
 
   async prepare() {
     if (this.storeDir && !pathExists(this.storeDir)) {
       fse.mkdirpSync(this.storeDir);
     }
-    if (this.packageVersion === 'latest') {
+    if (this.packageVersion === "latest") {
       this.packageVersion = await getNpmLatestVersion(this.packageName);
     }
   }
@@ -103,8 +101,8 @@ class Package {
           },
         ],
       });
-      this.packageVersion = latestFilePath;
     }
+    this.packageVersion = latestPackageVersion;
   }
 
   // 获取入口文件路径
@@ -113,7 +111,7 @@ class Package {
       const dir = pkgDir(targetPath);
       if (dir) {
         // 2. 读取package.json
-        const pkgFile = require(path.resolve(dir, 'package.json'));
+        const pkgFile = require(path.resolve(dir, "package.json"));
         if (pkgFile && pkgFile.main) {
           // 3. 寻找main
           // 4. 路径兼容

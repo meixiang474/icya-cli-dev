@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = {
   getNpmInfo,
@@ -7,10 +7,9 @@ module.exports = {
   getDefaultRegistry,
   getNpmLatestVersion,
 };
-console.log('npm');
-const axios = require('axios');
-const urlJoin = require('url-join');
-const semver = require('semver');
+const axios = require("axios");
+const urlJoin = require("url-join");
+const semver = require("semver");
 
 function getNpmInfo(npmName, registry) {
   if (!npmName) {
@@ -33,8 +32,8 @@ function getNpmInfo(npmName, registry) {
 
 function getDefaultRegistry(isOriginal = false) {
   return isOriginal
-    ? 'https://registry.npmjs.org'
-    : 'https://registry.npm.taobao.org';
+    ? "https://registry.npmjs.org"
+    : "https://registry.npm.taobao.org";
 }
 
 async function getNpmVersions(npmName, registry) {
